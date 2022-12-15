@@ -1,26 +1,31 @@
 {
-  "name": "project-2-repo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bulma": "^0.9.4",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.26.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "name": "model-view-controller",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metoama/Project-2-Repo.git"
+    "url": "git+https://github.com/solohuck/Model-View-Controller.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/metoama/Project-2-Repo/issues"
+    "url": "https://github.com/solohuck/Model-View-Controller/issues"
   },
-  "homepage": "https://github.com/metoama/Project-2-Repo#readme",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.26.0"
-  }
+  "homepage": "https://github.com/solohuck/Model-View-Controller#readme"
 }

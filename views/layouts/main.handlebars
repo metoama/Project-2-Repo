@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Bird</title>
+  <link rel="stylesheet" href="/js/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+    <header>
+
+      <nav class="level navbar is-primary">
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Home</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Dashboard</a>
+  </p>
+  <p class="level-item has-text-centered">
+      <a href="/" class="title">Blue Bird</a>
+  </p>
+  {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button id="logout">logout</button>
+        {{else}}
+  <p class="level-item has-text-centered">
+    <a class="link is-info" class="login" href="/login">Login</a>
+    {{/if}}
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info">Logout</a>
+  </p>
+</nav>
+      {{!-- <nav class="navbar is-link">
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button id="logout">logout</button>
+        {{else}}
+        <a class="login" href="/login">login</a>
+        {{/if}}
+        <h1>
+          <a href="/" class="title">Tech Blog</a>
+        </h1>
+      </nav> --}}
+    </header>
+
+    <main>
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/public/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
